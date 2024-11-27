@@ -1,0 +1,173 @@
+1)NUMERO TOPICS:5 
+-/imu/acceleration
+-/imu/angular_velocity
+-/imu/data
+-/zed2i/zed_node/left_gray/image_rect_gray
+-/system_info
+
+
+
+2)HZ TOPIC IMAGE:(27.973;27.979;29.227;29.313;29.243;29.258) Hz (ros2 bag play -s mcap rosbag2_2024_11_22-00_32_31_0.mcap;ros2 topic hz /zed2i/zed_node/left_gray/image_rect_gray):
+
+average rate: 27.973
+	min: 0.000s max: 0.081s std dev: 0.01498s window: 30
+average rate: 27.979
+	min: 0.000s max: 0.127s std dev: 0.02369s window: 58
+average rate: 29.227
+	min: 0.000s max: 0.127s std dev: 0.02362s window: 91
+average rate: 29.313
+	min: 0.000s max: 0.127s std dev: 0.02137s window: 121
+average rate: 29.243
+	min: 0.000s max: 0.127s std dev: 0.01957s window: 151
+average rate: 29.258
+	min: 0.000s max: 0.127s std dev: 0.01868s window: 181
+
+
+
+
+3)HZ TOPIC SYSTEM: (2.403;2.193;2.141;2.098;2.083;2.069) Hz (ros2 topic hz /system_info):
+
+average rate: 2.403
+	min: 0.234s max: 0.508s std dev: 0.12854s window: 3
+average rate: 2.193
+	min: 0.234s max: 0.508s std dev: 0.09953s window: 6
+average rate: 2.141
+	min: 0.234s max: 0.508s std dev: 0.08832s window: 8
+average rate: 2.098
+	min: 0.234s max: 0.530s std dev: 0.08154s window: 10
+average rate: 2.083
+	min: 0.234s max: 0.530s std dev: 0.07230s window: 13
+average rate: 2.069
+	min: 0.234s max: 0.530s std dev: 0.06554s window: 16
+
+
+
+
+4)TOPIC SYSTEM RETURN:
+
+cpu_usage: Percentuale di utilizzo della CPU
+cpu_temp: Temperatura della CPU in gradi Celsius
+ram_usage: Percentuale di utilizzo della memoria RAM
+gpu_usage: Percentuale di utilizzo della GPU
+gpu_temp: Temperatura della GPU in gradi Celsius
+gpuram_usage: Utilizzo della memoria della GPU
+
+cpu_usage: 18.9
+cpu_temp: 56.19
+ram_usage: 9.7
+gpu_usage: 63.3
+gpu_temp: 51.22
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.16
+ram_usage: 9.7
+gpu_usage: 62.5
+gpu_temp: 51.53
+gpuram_usage: 1181.0
+---
+cpu_usage: 19.0
+cpu_temp: 55.88
+ram_usage: 9.7
+gpu_usage: 58.9
+gpu_temp: 51.12
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.06
+ram_usage: 9.7
+gpu_usage: 65.5
+gpu_temp: 51.41
+gpuram_usage: 1181.0
+---
+cpu_usage: 19.0
+cpu_temp: 56.12
+ram_usage: 9.7
+gpu_usage: 18.7
+gpu_temp: 51.06
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.53
+ram_usage: 9.7
+gpu_usage: 31.0
+gpu_temp: 51.25
+gpuram_usage: 1181.0
+---
+cpu_usage: 19.0
+cpu_temp: 56.44
+ram_usage: 9.7
+gpu_usage: 68.1
+gpu_temp: 51.22
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.03
+ram_usage: 9.7
+gpu_usage: 74.3
+gpu_temp: 51.66
+gpuram_usage: 1181.0
+---
+cpu_usage: 19.0
+cpu_temp: 56.56
+ram_usage: 9.7
+gpu_usage: 48.8
+gpu_temp: 51.62
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.25
+ram_usage: 9.7
+gpu_usage: 59.8
+gpu_temp: 51.22
+gpuram_usage: 1181.0
+---
+cpu_usage: 19.0
+cpu_temp: 56.31
+ram_usage: 9.7
+gpu_usage: 42.0
+gpu_temp: 51.56
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.88
+ram_usage: 9.7
+gpu_usage: 37.5
+gpu_temp: 51.38
+gpuram_usage: 1181.0
+---
+cpu_usage: 19.0
+cpu_temp: 56.25
+ram_usage: 9.7
+gpu_usage: 60.4
+gpu_temp: 51.62
+gpuram_usage: 1181.0
+---
+cpu_usage: 15.4
+cpu_temp: 56.75
+ram_usage: 9.7
+gpu_usage: 59.6
+gpu_temp: 51.62
+gpuram_usage: 1181.0
+---
+
+5)CREATE A NODE:
+
+node created: system_publisher
+
+esempio di pubblicazione:
+
+ros2 run system_publisher system_publisher_node
+[INFO] [1732707410.962057394] [system_publisher]: Publishing: '10.000000'
+[INFO] [1732707411.954911045] [system_publisher]: Publishing: '10.000000'
+
+ros2 topic echo /test
+data: 10.0
+---
+data: 10.0
+---
+
+
+
+
+
